@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"nutb\startup_stm32f103xb.o"
+"nutb\main.o"
+"nutb\stm32f1xx_it.o"
+"nutb\stm32f1xx_hal_msp.o"
+"nutb\stm32f1xx_hal_gpio_ex.o"
+"nutb\stm32f1xx_hal_tim.o"
+"nutb\stm32f1xx_hal_tim_ex.o"
+"nutb\stm32f1xx_hal_uart.o"
+"nutb\stm32f1xx_hal.o"
+"nutb\stm32f1xx_hal_rcc.o"
+"nutb\stm32f1xx_hal_rcc_ex.o"
+"nutb\stm32f1xx_hal_gpio.o"
+"nutb\stm32f1xx_hal_dma.o"
+"nutb\stm32f1xx_hal_cortex.o"
+"nutb\stm32f1xx_hal_pwr.o"
+"nutb\stm32f1xx_hal_flash.o"
+"nutb\stm32f1xx_hal_flash_ex.o"
+"nutb\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "nutB\nutB.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nutB.map" -o nutB\nutB.axf

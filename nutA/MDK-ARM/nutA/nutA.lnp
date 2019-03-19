@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"nuta\startup_stm32f103xb.o"
+"nuta\main.o"
+"nuta\stm32f1xx_it.o"
+"nuta\stm32f1xx_hal_msp.o"
+"nuta\stm32f1xx_hal_gpio_ex.o"
+"nuta\stm32f1xx_hal_tim.o"
+"nuta\stm32f1xx_hal_tim_ex.o"
+"nuta\stm32f1xx_hal_uart.o"
+"nuta\stm32f1xx_hal.o"
+"nuta\stm32f1xx_hal_rcc.o"
+"nuta\stm32f1xx_hal_rcc_ex.o"
+"nuta\stm32f1xx_hal_gpio.o"
+"nuta\stm32f1xx_hal_dma.o"
+"nuta\stm32f1xx_hal_cortex.o"
+"nuta\stm32f1xx_hal_pwr.o"
+"nuta\stm32f1xx_hal_flash.o"
+"nuta\stm32f1xx_hal_flash_ex.o"
+"nuta\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "nutA\nutA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "nutA.map" -o nutA\nutA.axf
